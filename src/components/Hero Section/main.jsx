@@ -32,7 +32,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative bg-black h-screen">
+        <section className="relative bg-black h-screen overflow-x-hidden">
             {/* Background Video */}
             <video
                 ref={videoRef}
