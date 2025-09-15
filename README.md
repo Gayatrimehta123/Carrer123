@@ -1,12 +1,34 @@
-# React + Vite
+# Carrer123
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application built using **React** and **Vite**.
 
-Currently, two official plugins are available:
+## Project Description
+This repository contains the source code for a website, which includes a dynamic hero section with a video background, custom sections for our company's mission and values, and a responsive layout. The project demonstrates proficiency in modern web development using React and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Responsive Layout**: Adapts to various screen sizes, from mobile to desktop.
+- **Dynamic Hero Section**: Features a looping video background and responsive text content.
+- **Custom Components**: Includes reusable components for a responsive navbar, a custom button, and news cards.
+- **Git Version Control**: Managed with a separate `alpha` branch for development.
 
-## Expanding the ESLint configuration
+## Technologies Used
+- **Frontend**: React.js
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+To run this project locally, follow these steps:
+
+1.  **Clone the repository**:
+    `git clone https://github.com/Gayatrimehta123/Carrer123.git`
+
+2.  **Navigate to the project directory**:
+    `cd Carrer123`
+
+3.  **Install the dependencies**:
+    `npm install`
+
+4.  **Run the development server**:
+    `npm run dev`
+
+This will open the application in your browser at `http://localhost:5173`.
