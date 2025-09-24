@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background: 0, 0%, 0%;
+  /* white */
+  --foreground: 222.2 47.4% 11.2%;
+  /* black */
+  --primary: 221.2 83.2% 53.3%;
+  /* blue */
+  --secondary: 210 40% 96.1%;
+  /* gray */
 
 }
 
-
-
+.dark {
+  --background: 222.2 47.4% 11.2%;
+  /* dark gray */
+  --foreground: 210 40% 98%;
+  /* white */
+  --primary: 221.2 83.2% 66.3%;
+  /* lighter blue */
+  --secondary: 217.2 32.6% 17.5%;
+  /* dark gray */
+}
