@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Login from './components/Login.jsx'; // Import the LoginPage component
+import ForgotPasswordPage from './components/forgetpass.jsx';
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+         <Route path="/forgot-password" element={<ForgotPasswordPage />} /> 
       </Routes>
     </div>
   )

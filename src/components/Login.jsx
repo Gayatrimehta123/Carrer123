@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { Link } from 'react-router-dom'; // <--- CHANGE 1: Import Link
 
 const LoginPage = () => {
     // Phase 3: State Management and Logic
@@ -72,9 +73,13 @@ const LoginPage = () => {
 
                     {/* Forgot Password Link */}
                     <div className="text-center pt-2">
-                        <a href="#" className="text-gray-400 text-sm hover:text-gray-200 transition duration-200">
+                        {/* <a href="#" ...> is replaced by <Link> below */}
+                        <Link // <--- CHANGE 2: Use Link component
+                            to="/forgot-password" // <--- Points to the route defined in your App.jsx
+                            className="text-gray-400 text-sm hover:text-gray-200 transition duration-200"
+                        >
                             Forget Password
-                        </a>
+                        </Link>
                     </div>
                 </form>
             </div>
