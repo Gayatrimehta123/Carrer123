@@ -1,25 +1,30 @@
 // src/pages/ForgotPassword.jsx (or similar location)
 import React, { useState } from 'react';
 import { Mail } from 'lucide-react'; 
-import { Link } from 'react-router-dom'; // You'll need this for the back-to-login link
+import { Link } from 'react-router-dom';
 
 const ForgotPasswordPage = () => {
     const [email, setEmail] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // **PHASE 4: Will send the email to the backend API here**
         console.log("Password reset requested for:", email);
-
-        // For now, just show a message to the console
         alert("If the email is registered, a password reset link has been sent.");
-        
-        // Optionally, redirect to a confirmation page
+        // In a real app, you'd make an API call here.
     };
 
     return (
         <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
-            <div className="w-full max-w-sm bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl">
+            
+            {/* RESPONSIVE CONTAINER CHANGES:
+              1. w-full max-w-sm: Default (mobile) width, maxing out at 'sm' size.
+              2. sm:max-w-md: On small screens (tablets), widen to 'md' max width.
+              3. lg:max-w-lg: On large screens (desktops), widen to 'lg' max width for a comfortable look.
+              (Note: I have removed the repeated 'className' you had in your original code).
+            */}
+            <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg 
+                        bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl">
+                
                 <h2 className="text-center text-3xl font-bold text-white mb-8">
                     Reset Password
                 </h2>
